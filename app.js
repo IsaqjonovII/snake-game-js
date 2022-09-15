@@ -22,7 +22,6 @@ function main(currentTime) {
   const secondsSinceLastRenderTime = (currentTime - lastRenderTime) / 1000;
   if (secondsSinceLastRenderTime < 1 / SNAKE_SPEED) return;
 
-  // console.log("Render")
   lastRenderTime = currentTime;
 
   update();

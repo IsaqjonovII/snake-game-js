@@ -1,33 +1,42 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #130934;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-image: url("./triangle_background-9df4fa2e10f0e294779511e99083c2bc.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%; */
+  background-color: #00dbde;
+  background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
 }
 
-
 #game-board {
-    width: 100vmin;
-    height: 100vmin;
-    display: grid;
-    grid-template-columns: repeat(21, 1fr);
-    grid-template-rows: repeat(21, 1fr);
-    background-color: #ccc;
+  width: 80vw;
+  height: 90vmin;
+  display: grid;
+  grid-template-columns: repeat(40, 1fr);
+  grid-template-rows: repeat(22, 1fr);
+  background-color: rgba(204, 204, 204, 0.315);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid #bebebe68;
 }
 
 .snake {
-    background-color: dodgerblue;
-    border: .25vmin solid black;
+  background-color: #00dbde;
+  border: 0.1vmin solid #00869d;
+  border-radius: 8px;
 }
 
 .food {
-    background-color: yellow;
-    border: .25vmin solid black;
+  background-color: #fc00ff;
+  border: 0.01vmin solid #fb00ff72;
+  border-radius: 50%;
 }
